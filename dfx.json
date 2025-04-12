@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "newproject6_backend": {
+      "main": "src/newproject6_backend/main.mo",
+      "type": "motoko"
+    },
+    "newproject6_frontend": {
+      "dependencies": [
+        "newproject6_backend"
+      ],
+      "source": [
+        "src/newproject6_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "newproject6_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
